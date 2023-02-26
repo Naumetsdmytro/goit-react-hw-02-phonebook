@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { ContactForm } from 'components/ContactForm';
 import { ContactList } from 'components/ContactList';
-import { FilterContactForm } from 'components/FilterContactForm';
+// import { FilterContactForm } from 'components/FilterContactForm';
 
 export class App extends Component {
   state = {
