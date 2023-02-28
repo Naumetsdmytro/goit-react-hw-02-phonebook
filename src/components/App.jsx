@@ -21,14 +21,12 @@ export class App extends Component {
     };
     if (
       this.state.contacts.some(
-        alreadycontact =>
-          contact.name.toLowerCase() === alreadycontact.name.toLowerCase()
+        ({ name }) => contact.name.toLowerCase() === name.toLowerCase()
       )
     ) {
       alert(`${name} is already in contacts.`);
       return;
     }
-
     this.setState(({ contacts }) => {
       return {
         contacts: [contact, ...contacts],

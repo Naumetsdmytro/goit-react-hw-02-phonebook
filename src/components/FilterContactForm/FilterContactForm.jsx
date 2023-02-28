@@ -18,4 +18,5 @@ export const FilterContactForm = ({ value, onChange }) => {
 
 FilterContactForm.propTypes = {
   value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
